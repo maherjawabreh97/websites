@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر - تصميم متجر إلكتروني</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="template-store">
+
+  <!-- ====== TOP BAR ====== -->
+  <div class="store-topbar">
+    <span>🎉 توصيل مجاني للطلبات فوق 200 ريال</span>
+    <span>تسوق بثقة وأمان</span>
+  </div>
+
+  <!-- ====== HEADER ====== -->
+  <header class="store-header">
+    <div class="logo">متجر<span>.</span></div>
+    <div class="search-box">
+      <input type="text" placeholder="ابحث عن منتج...">
+      <button>🔍 بحث</button>
+    </div>
+    <div class="cart-icon">
+      🛒
+      <span>3</span>
+    </div>
+  </header>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" style="position:relative;background:#fff;box-shadow:0 2px 15px rgba(0,0,0,0.04);padding:0.7rem 5%;">
+    <ul class="nav-links" style="position:relative;right:auto;left:auto;width:auto;height:auto;background:transparent;padding:0;box-shadow:none;flex-direction:row;z-index:1;">
+      <li><a href="index.html" style="color:var(--dark);">الرئيسية</a></li>
+      <li><a href="#" class="active" style="color:var(--primary);">المتجر</a></li>
+      <li><a href="#" style="color:var(--dark);">العروض</a></li>
+      <li><a href="#" style="color:var(--dark);">حسابي</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====== SHOP HERO ====== -->
+  <section class="shop-hero">
+    <div class="shop-hero-content">
+      <h1>تسوق بأفضل الأسعار 🛍️</h1>
+      <p>أحدث المنتجات مع خصومات تصل إلى 50% لفترة محدودة</p>
+    </div>
+  </section>
+
+  <!-- ====== CONTROLS ====== -->
+  <div class="shop-controls">
+    <div class="cat-filters">
+      <button class="active" data-category="all">الكل</button>
+      <button data-category="electronics">📱 إلكترونيات</button>
+      <button data-category="fashion">👗 أزياء</button>
+      <button data-category="home">🏠 منزل</button>
+      <button data-category="beauty">🧴 عناية</button>
+    </div>
+    <select>
+      <option>ترتيب: الأحدث</option>
+      <option>الأقل سعراً</option>
+      <option>الأعلى سعراً</option>
+      <option>الأكثر مبيعاً</option>
+    </select>
+  </div>
+
+  <!-- ====== PRODUCTS ====== -->
+  <div class="products-grid">
+    <div class="product-card fade-in" data-category="electronics">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&q=80" alt="هاتف" loading="lazy">
+        <span class="sale-badge">-20%</span>
+      </div>
+      <div class="product-body">
+        <h4>هاتف ذكي برو</h4>
+        <div class="price"><s>$1,199</s> $899</div>
+        <button class="btn">🛒 أضف للسلة</button>
+      </div>
+    </div>
+    <div class="product-card fade-in" data-category="fashion">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" alt="حذاء" loading="lazy">
+        <span class="sale-badge">جديد</span>
+      </div>
+      <div class="product-body">
+        <h4>حذاء رياضي أصلي</h4>
+        <div class="price">$129</div>
+        <button class="btn">🛒 أضف للسلة</button>
+      </div>
+    </div>
+    <div class="product-card fade-in" data-category="electronics">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80" alt="سماعات" loading="lazy">
+      </div>
+      <div class="product-body">
+        <h4>سماعات لاسلكية</h4>
+        <div class="price"><s>$349</s> $249</div>
+        <button class="btn">🛒 أضف للسلة</button>
+      </div>
+    </div>
+    <div class="product-card fade-in" data-category="home">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="مصباح" loading="lazy">
+      </div>
+      <div class="product-body">
+        <h4>مصباح ذكي LED</h4>
+        <div class="price">$49</div>
+        <button class="btn">🛒 أضف للسلة</button>
+      </div>
+    </div>
+    <div class="product-card fade-in" data-category="beauty">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&q=80" alt="عطر" loading="lazy">
+        <span class="sale-badge">-15%</span>
+      </div>
+      <div class="product-body">
+        <h4>عطر فاخر</h4>
+        <div class="price"><s>$109</s> $89</div>
+        <button class="btn">🛒 أضف للسلة</button>
+      </div>
+    </div>
+    <div class="product-card fade-in" data-category="fashion">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&q=80" alt="فستان" loading="lazy">
+      </div>
+      <div class="product-body">
+        <h4>فستان أنيق</h4>
+        <div class="price">$159</div>
+        <button class="btn">🛒 أضف للسلة</button>
+      </div>
+    </div>
+    <div class="product-card fade-in" data-category="electronics">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80" alt="ساعة" loading="lazy">
+        <span class="sale-badge">أفضل سعر</span>
+      </div>
+      <div class="product-body">
+        <h4>ساعة ذكية</h4>
+        <div class="price"><s>$449</s> $349</div>
+        <button class="btn">🛒 أضف للسلة</button>
+      </div>
+    </div>
+    <div class="product-card fade-in" data-category="home">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&q=80" alt="نباتات" loading="lazy">
+      </div>
+      <div class="product-body">
+        <h4>نباتات زينة طبيعية</h4>
+        <div class="price">$29</div>
+        <button class="btn">🛒 أضف للسلة</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="logo">متجر<span>.</span></div>
+    <p class="footer-text">تسوق آمن وموثوق مع ضمان استرجاع المنتجات خلال 14 يوماً. خدمة عملاء متاحة 24/7.</p>
+    <div class="social-links">
+      <a href="#">💬</a>
+      <a href="#">📷</a>
+      <a href="#">🐦</a>
+      <a href="#">📧</a>
+    </div>
+    <div class="footer-bottom">© 2024 متجر - جميع الحقوق محفوظة</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    fetch('/api/track', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ page: window.location.pathname, referrer: document.referrer })
+    }).catch(() => {});
+  </script>
+</body>
+</html>

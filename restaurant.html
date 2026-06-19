@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مطعم الذواقة - تصميم موقع مطعم</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="template-restaurant">
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="#menu" class="active">المينيو</a></li>
+      <li><a href="#about">عن المطعم</a></li>
+      <li><a href="#reservation" class="cta-btn" style="background:linear-gradient(135deg,#f39c12,#e67e22);box-shadow:0 4px 15px rgba(243,156,18,0.3);">احجز الآن</a></li>
+    </ul>
+    <button class="hamburger" aria-label="القائمة">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="logo" style="gap:0;">
+      <img src="710604516_122116959831252082_8952770618359585246_n.jpg" alt="مصمم">
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="resto-hero">
+    <div class="resto-hero-bg">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80" alt="مطعم فاخر" loading="lazy">
+    </div>
+    <div class="resto-hero-content">
+      <h1>مطعم <span>الذواقة</span></h1>
+      <p>رحلة من النكهات الاستثنائية في أجواء راقية لا تُنسى</p>
+      <button class="btn-resto">اطلب الآن</button>
+    </div>
+  </section>
+
+  <!-- ====== MENU NAV ====== -->
+  <div class="resto-nav-links" id="menu">
+    <a href="#" class="active">الكل</a>
+    <a href="#">مقبلات</a>
+    <a href="#">أطباق رئيسية</a>
+    <a href="#">مشروبات</a>
+    <a href="#">حلويات</a>
+  </div>
+
+  <!-- ====== MENU ====== -->
+  <div class="resto-menu">
+    <div class="menu-item fade-in">
+      <div class="menu-item-img">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="سلطة سيزر" loading="lazy">
+        <span class="badge">الأكثر طلباً</span>
+      </div>
+      <div class="menu-item-body">
+        <h4>سلطة سيزر <span>$12</span></h4>
+        <p>خس طازج، جبن بارميزان، خبز محمص، صوص سيزر منزلي</p>
+      </div>
+    </div>
+    <div class="menu-item fade-in">
+      <div class="menu-item-img">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="بيتزا" loading="lazy">
+      </div>
+      <div class="menu-item-body">
+        <h4>بيتزا مارغريتا <span>$18</span></h4>
+        <p>صلصة طماطم إيطالية، موزاريلا طازجة، ريحان</p>
+      </div>
+    </div>
+    <div class="menu-item fade-in">
+      <div class="menu-item-img">
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80" alt="ستيك" loading="lazy">
+        <span class="badge">خاصة الشيف</span>
+      </div>
+      <div class="menu-item-body">
+        <h4>ستيك أنجوس <span>$35</span></h4>
+        <p>لحم أنجوس مشوي مع بطاطا مهروسة وخضار موسمية</p>
+      </div>
+    </div>
+    <div class="menu-item fade-in">
+      <div class="menu-item-img">
+        <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80" alt="باستا" loading="lazy">
+      </div>
+      <div class="menu-item-body">
+        <h4>باستا كاربونارا <span>$22</span></h4>
+        <p>باستا طازجة مع بيكون، كريمة، وجبن بارميزان</p>
+      </div>
+    </div>
+    <div class="menu-item fade-in">
+      <div class="menu-item-img">
+        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&q=80" alt="سوشي" loading="lazy">
+      </div>
+      <div class="menu-item-body">
+        <h4>سوشي <span>$28</span></h4>
+        <p>سلمون طازج، أرز ياباني، أعشاب بحرية</p>
+      </div>
+    </div>
+    <div class="menu-item fade-in">
+      <div class="menu-item-img">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="تشيز كيك" loading="lazy">
+        <span class="badge">جديد</span>
+      </div>
+      <div class="menu-item-body">
+        <h4>تشيز كيك <span>$10</span></h4>
+        <p>تشيز كيك بطبقة الفراولة الطازجة وصلصة التوت</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="resto-about" id="about">
+    <div class="resto-about-text fade-in-right">
+      <h2>حكاية <span>الذواقة</span></h2>
+      <p>منذ عام 2010 ونحن نقدم أشهى المأكولات لعملائنا الكرام. نستخدم أفضل المكونات الطازجة ونطبخ بشغف وحب. نؤمن بأن الطعام الجيد يجمع الناس، ونسعى دائماً لتقديم تجربة استثنائية.</p>
+      <ul class="resto-features">
+        <li>✅ مكونات طازجة يومياً</li>
+        <li>✅ طهاة عالميون</li>
+        <li>✅ أجواء راقية وعائلية</li>
+        <li>✅ توصيل مجاني للطلبات</li>
+      </ul>
+    </div>
+    <div class="resto-about-img fade-in-left">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&q=80" alt="جلسة مطعم" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="testimonials">
+    <h2>ماذا قال <span style="color:#f39c12;">الجميع</span></h2>
+    <div class="test-grid">
+      <div class="test-card fade-in">
+        <div class="stars">★★★★★</div>
+        <p>أفضل مطعم زرته على الإطلاق! الأجواء رائعة والطعام لذيذ جداً. السلطة طازجة والستيك لا يُقاوم.</p>
+        <div class="author">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="سارة" loading="lazy">
+          <div>
+            <h5>سارة أحمد</h5>
+            <span>عميلة دائمة</span>
+          </div>
+        </div>
+      </div>
+      <div class="test-card fade-in">
+        <div class="stars">★★★★★</div>
+        <p>البيتزا هنا تشبه تلك التي أكلتها في إيطاليا! الخدمة سريعة والموظفين ودودين وأنيقين.</p>
+        <div class="author">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="خالد" loading="lazy">
+          <div>
+            <h5>خالد محمد</h5>
+            <span>مذواق طعام</span>
+          </div>
+        </div>
+      </div>
+      <div class="test-card fade-in">
+        <div class="stars">★★★★☆</div>
+        <p>مكان جميل للعشاء العائلي. التنوع في القائمة رائع والأسعار معقولة جداً. الجلسات الخارجية ممتازة.</p>
+        <div class="author">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="نورة" loading="lazy">
+          <div>
+            <h5>نورة عبدالله</h5>
+            <span>ربة منزل</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== RESERVATION ====== -->
+  <section class="reservation" id="reservation">
+    <div class="reservation-bg">
+      <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=1920&q=80" alt="حجز" loading="lazy">
+    </div>
+    <div class="reservation-content">
+      <h2>احجز طاولتك 🍽️</h2>
+      <p>نحن في انتظارك من السبت إلى الخميس، من 1 ظهراً حتى 12 منتصف الليل</p>
+      <form id="reservationForm">
+        <div class="form-group"><input type="text" placeholder="الاسم كامل" required></div>
+        <div class="form-group">
+          <input type="tel" placeholder="رقم الجوال" required>
+        </div>
+        <div class="form-group">
+          <input type="number" placeholder="عدد الأشخاص" min="1" required>
+        </div>
+        <div class="form-group">
+          <input type="date" required>
+        </div>
+        <button type="submit" class="btn-resto" style="width:100%;justify-content:center;">تأكيد الحجز</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="logo" style="gap:0;">
+      <img src="710604516_122116959831252082_8952770618359585246_n.jpg" alt="مصمم" style="height:36px;width:auto;border-radius:6px;">
+    </div>
+    <p class="footer-text">نحن في انتظارك يومياً من السبت إلى الخميس | 1 ظهراً - 12 منتصف الليل</p>
+    <div class="social-links">
+      <a href="#">💬</a>
+      <a href="#">📷</a>
+      <a href="#">🐦</a>
+      <a href="#">📍</a>
+    </div>
+    <div class="footer-bottom">© 2024 مطعم الذواقة - جميع الحقوق محفوظة</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Reservation form
+    document.getElementById('reservationForm')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const inputs = this.querySelectorAll('input');
+      const data = {
+        name: inputs[0]?.value || '',
+        email: '',
+        type: 'مطعم',
+        message: 'حجز: ' + (inputs[1]?.value || '') + ' | عدد الأشخاص: ' + (inputs[2]?.value || '') + ' | التاريخ: ' + (inputs[3]?.value || '')
+      };
+      fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(r => r.json())
+      .then(res => { alert('تم الحجز بنجاح! سنتصل بك للتأكيد.'); this.reset(); })
+      .catch(() => { alert('تم الحجز بنجاح! سنتصل بك للتأكيد.'); this.reset(); });
+    });
+
+    // Visitor tracking
+    fetch('/api/track', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ page: window.location.pathname, referrer: document.referrer })
+    }).catch(() => {});
+  </script>
+</body>
+</html>

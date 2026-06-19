@@ -1,0 +1,3 @@
+🚀 السيرفر شغال على: http://localhost:3000
+📊 لوحة التحكم: http://localhost:3000/admin
+🔑 username: admin | password: musamim2024
