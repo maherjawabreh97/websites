@@ -323,7 +323,7 @@
           </div>
         </div>
       </div>
-      <form class="contact-form fade-in-right" id="contactForm">
+      <form class="contact-form fade-in-right" onsubmit="event.preventDefault(); alert('شكراً لتواصلك! سنعود إليك قريباً 😊'); this.reset();">
         <div class="form-group">
           <input type="text" placeholder="الاسم كامل" required>
         </div>
@@ -366,32 +366,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script>
-    // Contact form submission
-    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const data = {
-        name: this.querySelector('[placeholder*="الاسم"]')?.value || '',
-        email: this.querySelector('[type="email"]')?.value || '',
-        type: this.querySelector('select')?.value || '',
-        message: this.querySelector('textarea')?.value || ''
-      };
-      fetch('/api/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      })
-      .then(r => r.json())
-      .then(res => { alert(res.message || 'تم الإرسال!'); this.reset(); })
-      .catch(() => { alert('تم استلام طلبك!'); this.reset(); });
-    });
-
-    // Visitor tracking
-    fetch('/api/track', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ page: window.location.pathname, referrer: document.referrer })
-    }).catch(() => {});
-  </script>
 </body>
 </html>
