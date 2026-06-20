@@ -544,6 +544,12 @@ footer .logo span { display: none; }
   background: rgba(255,255,255,0.04);
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255,255,255,0.06);
+  transition: var(--transition);
+}
+.stat:hover {
+  transform: translateY(-4px);
+  background: rgba(108,99,255,0.08);
+  border-color: rgba(108,99,255,0.2);
 }
 .stat h4 {
   font-size: 2rem;
@@ -621,6 +627,13 @@ footer .logo span { display: none; }
   background: rgba(255,255,255,0.03);
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255,255,255,0.06);
+  transition: var(--transition);
+  cursor: default;
+}
+.contact-item:hover {
+  background: rgba(108,99,255,0.06);
+  border-color: rgba(108,99,255,0.15);
+  transform: translateX(-4px);
 }
 .contact-item .icon {
   width: 45px; height: 45px;
