@@ -338,15 +338,15 @@
           </div>
         </div>
       </div>
-      <form class="contact-form fade-in-right" onsubmit="event.preventDefault(); alert('شكراً لتواصلك! سنعود إليك قريباً 😊'); this.reset();">
+      <form class="contact-form fade-in-right" action="https://formspree.io/f/mgejwdol" method="POST">
         <div class="form-group">
-          <input type="text" placeholder="الاسم كامل" required>
+          <input type="text" name="name" placeholder="الاسم كامل" required>
         </div>
         <div class="form-group">
-          <input type="email" placeholder="البريد الإلكتروني" required>
+          <input type="email" name="email" placeholder="البريد الإلكتروني" required>
         </div>
         <div class="form-group">
-          <select>
+          <select name="service">
             <option value="">نوع الموقع المطلوب</option>
             <option>مطعم وكافيه</option>
             <option>متجر إلكتروني</option>
@@ -356,7 +356,7 @@
           </select>
         </div>
         <div class="form-group">
-          <textarea placeholder="اشرح فكرتك بالتفصيل..." required></textarea>
+          <textarea name="message" placeholder="اشرح فكرتك بالتفصيل..." required></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;">
           إرسال الطلب
