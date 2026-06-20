@@ -195,8 +195,6 @@ footer .logo { justify-content: center; margin-bottom: 1rem; color: #fff; }
 footer .logo img {
   height: 72px;
   width: auto;
-  mix-blend-mode: multiply;
-  filter: brightness(1.2) contrast(1.1);
 }
 footer .logo span { display: none; }
 .footer-text { color: rgba(255,255,255,0.5); font-size: 0.95rem; margin-bottom: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.7; }
@@ -919,18 +917,14 @@ footer .logo span { display: none; }
 }
 .value-image img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: 200px;
+  object-fit: contain;
+  background: var(--darker);
 }
 .value-image .v-overlay {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 1.5rem;
-  right: 1.5rem;
   background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(10px);
-  padding: 1.2rem 1.5rem;
-  border-radius: var(--radius-sm);
+  padding: 1rem 1.2rem;
+  border-radius: 0 0 var(--radius) var(--radius);
   text-align: center;
 }
 .value-image .v-overlay h5 {
@@ -946,7 +940,7 @@ footer .logo span { display: none; }
 @media (max-width: 968px) {
   .value-grid { grid-template-columns: 1fr; gap: 2rem; }
   .value-grid.reverse { direction: rtl; }
-  .value-image img { height: 280px; }
+  .value-image img { height: 200px; }
 }
 
 /* ====== TEMPLATE: RESTAURANT ====== */
@@ -1464,3 +1458,39 @@ footer .logo span { display: none; }
 }
 .showcase-card-body h4 { color: #fff; margin-bottom: 0.3rem; }
 .showcase-card-body p { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.6; }
+
+/* ====== FLOATING CONTACT BUTTONS ====== */
+.float-btns {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.float-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.float-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.3);
+}
+.float-whatsapp {
+  background: #25D366;
+}
+.float-phone {
+  background: var(--primary);
+}
+@media (max-width: 600px) {
+  .float-btns { bottom: 1.2rem; left: 1.2rem; }
+  .float-btn { width: 48px; height: 48px; }
+}
